@@ -1,0 +1,206 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+    font-family: "gothampro-medium";
+    src: url(../fonts/gothampro-medium.ttf);
+}
+
+@font-face {
+    font-family: "gothampro-light";
+    src: url(../fonts/gothampro-light.ttf);
+}
+
+@font-face {
+    font-family: "myriadpro-regular";
+    src: url(../fonts/myriadpro-regular.ttf);
+}
+
+.bg_section {
+    background: url(../img/bg12section.jpg) 0 0/100% 100% no-repeat;
+}
+
+.header {
+    width: 100%;
+    min-height: 110px;
+    .container {
+        min-height: 110px;
+    }
+    &_wrapper {
+        min-height: 110px;
+        display: flex;
+        align-items: center;
+    }
+    .logo_img {
+        margin: 0 auto;
+    }
+    
+    &_navigation_list {
+        display: flex;
+        justify-content: space-around;
+        li {
+            padding-right: 30px;
+            font-size: 17px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                span {
+                    color: #fff;
+                }
+            }
+        }
+        .social {
+            padding-right: 5px;
+        }
+    }
+}
+
+hr {
+   color: #fff;   
+}
+    
+.creatives {
+    min-height: 1600px;
+}
+
+.akita {
+    display: flex;
+    justify-content: space-around;
+    min-height: 850px;
+    width: 100%;
+    background: url(../img/bg_akita_section.jpg) 0 0/100% 100% no-repeat;
+    .image_phone {
+        margin: 95px 160px 0 0;
+    }
+}
+
+.wrapper_akita {
+    color: #fff;
+    margin-left: 80px;
+    h2 {
+        font-family: gothampro-medium;
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 220px;
+        }
+    .text_akita {
+        font-family: gothampro-light;
+        font-size: 15px;
+        margin-top: 35px;
+        line-height: 25px;
+        }
+    .fully_blue {
+        height: 40px;
+        width: 365px;
+        background-color: #11749e;
+            .fully_text {
+                font-size: 15px;
+                padding: 12px 0 0 16px;
+                margin-top: 62px;
+                font-family: gothampro-medium;
+            }
+    }
+    .high_blue {
+        height: 40px;
+        width: 400px;
+        background-color: #11749e;
+        margin-top: 19px;
+            .high_text {
+                font-size: 15px;
+                padding: 12px 0 0 16px;
+                font-family: gothampro-medium;
+            }
+    }
+    .different_blue {
+        height: 40px;
+        width: 425px;
+        background-color: #11749e;
+        margin-top: 19px;
+            .different_text {
+                font-size: 15px;
+                padding: 12px 0 0 16px;
+                font-family: gothampro-medium;
+            }
+    }
+}
+
+.two {
+    min-height: 300px;
+    background-color: red;
+}
