@@ -88,12 +88,18 @@ select {
 }
 
 @font-face {
+    font-family: "gothampro-bold";
+    src: url(../fonts/gothampro-bold.ttf)
+}
+
+@font-face {
     font-family: "myriadpro-regular";
     src: url(../fonts/myriadpro-regular.ttf);
 }
 
 .bg_section {
     background: url(../img/bg12section.jpg) 0 0/100% 100% no-repeat;
+    width: 100%;
 }
 
 .header {
@@ -115,7 +121,7 @@ select {
         display: flex;
         justify-content: space-around;
         li {
-            padding-right: 31px;
+            padding-right: 30px;
             font-size: 17px;
             a {
                 text-decoration: none;
@@ -132,11 +138,118 @@ select {
 }
 
 hr {
-   color: #fff;   
+   color: #fff;
+   margin: 0;  
 }
     
 .creatives {
-    min-height: 1600px;
+    min-height: 1250px;
+    &_wrapper {
+        line-height: 50px;
+        text-align: center;
+        margin-top: 275px;
+    }
+    h1 {
+        color: #fff;
+        font-size: 130px;
+        font-family: gothampro-bold;
+        font-weight: 300;
+
+    }
+    .site {
+        color: #11749e;
+        font-size: 25px;
+        font-family: gothampro-medium; 
+        text-transform: uppercase;
+        word-spacing: 10px;
+        letter-spacing: 14px;
+        }
+    .scroll-down {
+        margin-top: 85px;
+        line-height: 50px;
+        p {
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+        }
+
+    .wrapper_scroll {
+        display: flex;
+        justify-content: center;
+        margin-left: 650px;
+        width: 50px;
+        height: 50px;
+        border: solid;
+        color: #fff;
+        border-radius: 100%;
+        border-width: 1px;
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+}
+
+.label {
+    margin-top: 250px;
+    font-size: 40px;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'gothampro-medium', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+.label::before {
+    content: "W";
+    position: absolute;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 245px;
+    color: #fff;
+    opacity: 0.4;
+    line-height: 70px;
+    margin-left: 235px;
+    font-weight: 300;
+}
+
+.promo_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    .promo_item {
+        width: 259px;
+        .promo_round {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: #2e85aa;
+        }
+        .promo_descr_title {
+            margin-top: 15px;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-family: gothampro-medium;
+
+
+        }
+        .promo_descr_text {
+            margin-top: 25px;
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+            font-family: gothampro-light;
+        }
+    }
+    
 }
 
 .akita {
