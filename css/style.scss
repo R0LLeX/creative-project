@@ -252,6 +252,49 @@ hr {
     
 }
 
+.akita_one {
+    min-height: 775px;
+    &_wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .color {
+            background-color: #222222;
+            min-width: 674px;
+        }
+    }
+    .time_and_text {
+        display: inline-block;
+        margin: 70px 0 30px 115px;
+        color: #fff;
+
+        .akita_one_title {
+            margin-top: 10px;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: gothampro-medium;
+        }
+        .akita_one_text{
+            font-size: 15px;
+            font-family: gothampro-light;
+            margin-top: 25px;
+        }
+        span {
+            padding-left: 8px;
+        }
+    }
+    .time {
+        border-right: 2px solid white;
+        color: white;
+        padding-right: 10px;
+        font-size: 13px;
+        font-family: gothampro-light;
+    }
+    .color_2 {
+        background-color: #f3f3f3;
+        min-width: 674px;
+}
+
 .akita {
     display: flex;
     justify-content: space-around;
