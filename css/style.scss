@@ -167,6 +167,10 @@ hr {
     .scroll-down {
         margin-top: 85px;
         line-height: 50px;
+        .scroll_center {
+            display: flex;
+            justify-content: center;
+        }
         p {
             color: #fff;
             font-family: 'Open Sans', sans-serif;
@@ -176,7 +180,7 @@ hr {
     .wrapper_scroll {
         display: flex;
         justify-content: center;
-        margin-left: 650px;
+        text-align: center;
         width: 50px;
         height: 50px;
         border: solid;
@@ -344,7 +348,7 @@ hr {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 245px;
         color: #000;
-        opacity: 0.3;
+        opacity: 0.2;
         line-height: 70px;
         margin-left: 50px;
         font-weight: 300;
@@ -379,10 +383,28 @@ hr {
     }
 }
 
-
-
-
-
+.blue_write {
+    height: 100%;
+    background-color: #11749e;
+    .blue_write_wrapper_all {
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 0 120px 0;
+        .blue_write_wrapper_text {
+            color: #fff;
+            font-size: 15px;
+            font-family: 'gothampro-light' , sans-serif;
+            margin-left: 25px;
+        }
+        .blue_write_wrapper_1 {
+            display: flex;
+        }
+        .blue_write_wrapper_2 {
+            display: flex;
+            margin-left: 30px;
+        }
+    }
+}
 
 .akita {
     display: flex;
@@ -445,7 +467,67 @@ hr {
     }
 }
 
+.team {
+    height: 100%;
+    &_title {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-top: 100px;
+        position: relative;
+        font-family: 'gothampro-medium', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        }
+
+    &_title::before {
+        content: "T";
+        position: absolute;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 245px;
+        color: #000;
+        opacity: 0.2;
+        line-height: 50px;
+        margin-left: 50px;
+        font-weight: 300;
+        }
+        &_title_3 {
+            margin-top: 100px;
+            font-size: 30px;
+            font-family: gothampro-light;
+            text-align: center;
+            font-weight: 700;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 70px 0 100px 0;
+        .our_team {
+            position: relative;
+            h4 {
+                top: 357px;
+                left: 26px;
+                position: absolute;
+                width: 207px;
+                height: 55px;
+                background-color: #fff;
+                text-align: center;
+                padding-top: 20px;
+                text-transform: uppercase;
+                color: #11749e;
+                font-size: 20px;
+                font-family: 'gothampro-medium', sans-serif;
+            }
+            h5 {
+                font-size: 15px;
+                font-family: 'gothampro-medium', sans-serif;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
 .two {
-    min-height: 300px;
+    min-height: 200px;
     background-color: red;
 }
