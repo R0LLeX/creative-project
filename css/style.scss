@@ -130,10 +130,31 @@ body {
             a {
                 text-decoration: none;
                 color: #fff;
+                line-height: 1;
+                cursor: pointer;
+                line-height: 105px;
                 span {
                     color: #fff;
                 }
             }
+            
+            a:after {
+                background-color: #11749e;
+                display: block;
+                content: "";
+                height: 5px;
+                width: 0%;
+                -webkit-transition: width .3s ease-in-out;
+                -moz--transition: width .3s ease-in-out;
+                transition: width .3s ease-in-out;
+                transform:translateX(-20%)
+            }
+            a:hover:after,
+            a:focus:after {
+                width: 155%;
+            }
+
+
         }
         .social {
             padding-right: 5px;
@@ -536,8 +557,8 @@ hr {
 .form {
     min-height: 900px;
     background: url(../img/bg_form.jpg) 0 0/100% 100% no-repeat;
-    position: absolute;
     width: 100%;
+    position: absolute;
     z-index: -1;
     &_title {
         font-size: 35px;
@@ -570,6 +591,9 @@ hr {
             border: 1px solid #fff;
             margin-bottom: 30px;
             background: rgba( 0,0,0,.1);
+            color: #fff;
+            padding-left: 15px;
+
         }
         .form_margin {
             margin-left: 18px;
@@ -581,18 +605,18 @@ hr {
             background: rgba( 0,0,0,.1);
             margin-bottom: 35px;
             resize: none;
+            color: #fff;
+            padding: 8px 0 0 15px;
         }
         input::placeholder {
             color: #fff;
             font-size: 15px;
             font-family: 'gothampro-light' , sans-serif;
-            padding-left: 15px;
           }
           textarea::placeholder {
             color: #fff;
             font-size: 15px;
             font-family: 'gothampro-light' , sans-serif;
-            padding: 8px 0 0 15px;
           }
         .btn {
             min-width: 225px;
@@ -613,12 +637,16 @@ hr {
     min-height: 300px;
     background: url(../img/bg_footer_map.jpg) 0 0/100% 100% no-repeat;
     width: 100%;
-    margin-top: 830px;
+    position: relative;
+    top: 830px;
 }
 
 .bee {
     min-height: 105px;
     background-color: #222222;
+    position: relative;
+    top: 830px;
+
     &_wrapper {
         min-height: 105px;
         display: flex;
