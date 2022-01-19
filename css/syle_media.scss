@@ -108,8 +108,7 @@
           width: 100%;
           height: 100%;
           .logo_img {
-            display: block;
-            margin: 0 auto;
+            margin-left: 330px;
           }
           h1 {
             font-size: 80px;
@@ -117,11 +116,68 @@
           .site {
             font-size: 20px;
           }
+          .promo_wrapper {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 100px;
+          }
+
+        .akita_one_wrapper {
+          flex-direction: row-reverse;
         }
+        }
+        .user_img_1 {
+          order: -1;
+          width: 800px;
+        }
+
+        .time_and_text {
+          order: 0;
+          margin: 70px 0 90px 200px;
+          text-align: center;
+        }
+
+        .user_img_2 {
+          width: 800px;
+
+        }
+
+        .time_and_text_2 {
+          margin: 70px 0 90px 200px;
+          text-align: center;
+        }
+
+
+      .blog {
+        width: 100%;
+        .blog_wrapper {
+          flex-wrap: wrap;
+          .blog_item{
+            margin-bottom: 30px;
+            width: 220px;
+          }
+        }
+      }
+
+      .blue_write_wrapper_all {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .blue_write_wrapper_1 {
+          margin-left: 30px;
+        }
+
+        .blue_write_wrapper_2 {
+          display: flex;
+          margin-top: 50px;
+      }
+      }
+
+
+
         .form {
           width: 100%;
           .texterea_size{
-            width: 500px;
+            width: 300px;
           }
         }
       }
