@@ -127,18 +127,16 @@ body {
         li {
             padding-right: 30px;
             font-size: 17px;
-            a {
+            .burger_king {
                 text-decoration: none;
                 color: #fff;
-                line-height: 1;
                 cursor: pointer;
-                line-height: 105px;
                 span {
                     color: #fff;
                 }
             }
             
-            a:after {
+            .burger_king:after {
                 background-color: #11749e;
                 display: block;
                 content: "";
@@ -147,10 +145,10 @@ body {
                 -webkit-transition: width .3s ease-in-out;
                 -moz--transition: width .3s ease-in-out;
                 transition: width .3s ease-in-out;
-                transform:translateX(-20%)
+                transform:translateX(-20%) translateY(28px);
             }
-            a:hover:after,
-            a:focus:after {
+            .burger_king:hover:after,
+            .burger_king:focus:after {
                 width: 155%;
             }
 
@@ -662,4 +660,8 @@ hr {
         color: #fff;
         font-weight: 300;
     }
+}
+
+#menu-toggle {
+    display: none;
 }
