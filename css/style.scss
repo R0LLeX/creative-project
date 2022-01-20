@@ -220,6 +220,8 @@ hr {
 }
 
 .label {
+    display: flex;
+    justify-content: center;
     margin-top: 250px;
     font-size: 40px;
     position: relative;
@@ -238,7 +240,6 @@ hr {
     color: #fff;
     opacity: 0.4;
     line-height: 70px;
-    margin-left: 235px;
     font-weight: 300;
 }
 
