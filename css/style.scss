@@ -127,7 +127,8 @@ body {
         li {
             padding-right: 30px;
             font-size: 17px;
-            .burger_king {
+            
+            .zaebalo {
                 text-decoration: none;
                 color: #fff;
                 cursor: pointer;
@@ -136,7 +137,7 @@ body {
                 }
             }
             
-            .burger_king:after {
+            .zaebalo:after {
                 background-color: #11749e;
                 display: block;
                 content: "";
@@ -147,8 +148,8 @@ body {
                 transition: width .3s ease-in-out;
                 transform:translateX(-20%) translateY(28px);
             }
-            .burger_king:hover:after,
-            .burger_king:focus:after {
+            .zaebalo:hover:after,
+            .zaebalo:focus:after {
                 width: 155%;
             }
 
@@ -357,6 +358,8 @@ hr {
 .blog {
     height: 100%;
     &_title {
+        display: flex;
+        justify-content: center;
         font-size: 40px;
         text-transform: uppercase;
         margin-top: 100px;
@@ -374,7 +377,7 @@ hr {
         color: #000;
         opacity: 0.2;
         line-height: 70px;
-        margin-left: 50px;
+        // margin-left: 50px;
         font-weight: 300;
         }
         &_title_3 {
@@ -581,9 +584,13 @@ hr {
         margin-left: 350px;
         font-weight: 300;
         }
-        &_wrapper {
-        margin-top: 170px;
-        text-align: center;
+    
+        .form_flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 170px 150px 0 150px;
+        
         .form-input {
             width: 330px;
             height: 45px;
@@ -594,11 +601,9 @@ hr {
             padding-left: 15px;
 
         }
-        .form_margin {
-            margin-left: 18px;
-        }
+       
         .texterea_size {
-            width: 1035px;
+            width: 1049px;
             height: 140px;
             border: 1px solid #fff;
             background: rgba( 0,0,0,.1);
@@ -617,17 +622,25 @@ hr {
             font-size: 15px;
             font-family: 'gothampro-light' , sans-serif;
           }
-        .btn {
-            min-width: 225px;
-            min-height: 65px;
-            background-color: #11749e;
-            border: none;
-            text-transform: uppercase;
-            color: #fff;
-            font-size: 24px;
-            font-family: 'gothampro-medium', sans-serif;
-            margin-bottom: 95px;
-        }
+    }
+    .button_flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 225px;
+        min-height: 65px;
+        background-color: #11749e;
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        font-family: 'gothampro-medium', sans-serif;
+        margin-bottom: 95px;
     }
 }
 

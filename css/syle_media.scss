@@ -4,7 +4,7 @@
         align-items: center;
         position: absolute;
         top: 45px;
-        right: 680px;;
+        right: 45px;
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -41,45 +41,35 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: #ECEFF1;
+        background-color: #000;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
         transition-duration: .25s;
       }
        
-      .burger_king {
-        color: #000;
-        display: block;
-        font-family: sans-serif;
+      .zaebalo {
+        color: red;
+        // display: block;
         font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
         transition-duration: .25s;
         padding-left: 20px;
     }
 
-
-    .burger_king:after {
-        background-color: #11749e;
-        display: block;
-        content: "";
-        height: 5px;
-        width: 0%;
-        -webkit-transition: width .3s ease-in-out;
-        -moz--transition: width .3s ease-in-out;
-        transition: width .3s ease-in-out;
-        transform:translateX(-20%) translateY(28px);
-    }
-    .burger_king:hover:after,
-    .burger_king:focus:after {
+.zaebalo::after {
+  transform:translateY(2px);
+}
+    
+    .zaebalo:hover:after,
+    .zaebalo:focus:after {
         width: 100%;
     }
 
       
-      .burger_king:hover {
+      .zaebalo:hover {
         background-color: #CFD8DC;
         color: black;
       }
        
+    
     
        
       #menu-toggle{
@@ -110,7 +100,7 @@
           
           .logo_img_div {
           display: flex;
-          justify-content: center;
+          // justify-content: center;
           width: 100%;
         }
 
@@ -157,8 +147,7 @@
           order: 2;
         }
         .time_and_text {
-          display: flex;
-          margin: 70px 0 90px 200px;
+          padding-left: 30px;
           text-align: center;
         }
 
@@ -172,22 +161,23 @@
 
         .color_2{
           order: 4;
+          width: 100%;
         }
 
         .time_and_text_2 {
-          order: 2;
-          margin: 70px 0 90px 200px;
           text-align: center;
+          padding-left: 75px;
         }
 
 
       .blog {
         width: 100%;
+       
         .blog_wrapper {
           flex-wrap: wrap;
           .blog_item{
-            margin-bottom: 30px;
-            width: 220px;
+            margin-bottom: 15px;
+            width: 40%;
           }
         }
       }
@@ -205,13 +195,90 @@
       }
       }
 
+      .akita {
+        // flex-wrap: wrap;
+        min-height: 550px;
+        .wrapper_akita {
+          width: 300px;
+          height: 100%;
+          margin-left: 10px;
+          h2 {
+            padding: 50px 35px 0 0;
+          }
+        }
+        .image_phone {
+            // margin: 170px 0 0 20px;
+            margin: 0;
+            width: 250px;
+            height: 350px;
+        }
+
+        .fully_blue {
+          height: 30px;
+          width: 280px;
+              .fully_text {
+                  font-size: 14px;
+                  padding: 8px 0 0 8px;
+              }
+            }
+        .high_blue {
+          height: 30px;
+          width: 310px;
+              .high_text {
+                  font-size: 14px;
+                  padding: 8px 0 0 8px;
+          }
+        }
+
+        .different_blue {
+          height: 30px;
+          width: 340px;
+              .different_text {
+                  font-size: 14px;
+                  padding: 8px 0 0 8px;
+          }
+        }
+        .none{
+          display: none;
+        }
+    }
+    
+    .team_wrapper {
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      .our_team {
+        margin-bottom: 30px;
+      }
+    }
+
+
 
 
         .form {
           width: 100%;
+        &_title{
+          font-size: 30px;
+        }
+        &_title::before {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            font-size: 220px;
+            width: 100%;
+            }
+
+            .form_flex {
+              justify-content: center;
+              margin-top: 90px;
+            }
           .texterea_size{
             width: 300px;
           }
+        }
+
+
+        .bee_wrapper {
+          margin: 0 50px 0 50px;
         }
       }
 }
