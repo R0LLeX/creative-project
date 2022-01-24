@@ -100,6 +100,9 @@
 
       body {
         width: 100%;
+        .row {
+          --bs-gutter-x: 0;
+        }
         .bg_section {
           width: 100%;
           height: 100%;
@@ -156,7 +159,7 @@
           text-align: center;
           margin: 0 auto;
           width: 100%;
-          margin: 70px 0 70px 0;
+          padding: 70px 20px 70px 20px;
         }
 
         .user_img_2 {
@@ -176,13 +179,12 @@
           text-align: center;
           margin: 0 auto;
           width: 100%;
-          margin: 70px 0 70px 0;
+         padding: 70px 20px 70px 20px;
         }
 
 
       .blog {
         width: 100%;
-       
         .blog_wrapper {
           flex-wrap: wrap;
           .blog_item{
@@ -324,6 +326,10 @@
   body .form .form_flex {
     margin: 50px 25px 0 25px;
   }
+  .bg_section {
+    background: url(../img/bg12section.jpg) no-repeat;
+    background-size: auto 100%;
+  }
 }
 
 @media (max-width:534px) {
@@ -338,6 +344,9 @@
     }
     .none {
       display: none;
+    }
+    body .bg_section .promo_wrapper {
+      margin-top: 100px;
     }
 }
 
@@ -397,5 +406,17 @@ body .akita .fully_blue {
 @media (max-width:323px) {
   body .bg_section .label {
     padding-top: 401px;
+  }
+}
+
+@media (max-width:275px) {
+  body .bg_section .label {
+    padding-top: 500px;
+  }
+  body .bg_section .site {
+    font-size: 10px;
+  }
+  body .bg_section h1 {
+    font-size: 30px;
   }
 }
