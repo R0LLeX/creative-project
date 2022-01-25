@@ -287,6 +287,17 @@ hr {
     &_wrapper {
         display: flex;
         flex-flow: row wrap;
+
+        .user_img_div {
+            width: 50%;
+            background: url(../img/user1.jpg) 0 0/100% 100% no-repeat;
+          }
+          .user_img_block {
+            background: url(../img/user2.jpg) 0 0/100% 100% no-repeat;
+            width: 50%;
+          }
+
+
         .color {
             background-color: #222222;
             flex-grow: 1;
