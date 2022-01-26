@@ -50,7 +50,7 @@ a:not([class]) {
 
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
+//   max-width: 100%;
   display: block;
 }
 
@@ -176,14 +176,14 @@ hr {
     h1 {
         color: #fff;
         font-size: 130px;
-        font-family: gothampro-bold;
+        font-family: 'gothampro-bold', Arial;
         font-weight: 300;
 
     }
     .site {
         color: #11749e;
         font-size: 25px;
-        font-family: gothampro-medium; 
+        font-family: 'gothampro-medium', sans-serif; 
         text-transform: uppercase;
         word-spacing: 10px;
         letter-spacing: 14px;
@@ -266,7 +266,7 @@ hr {
             color: #fff;
             text-transform: uppercase;
             font-size: 18px;
-            font-family: gothampro-medium;
+            font-family: 'gothampro-medium', sans-serif;
 
 
         }
@@ -275,7 +275,7 @@ hr {
             text-align: center;
             color: #fff;
             font-size: 15px;
-            font-family: gothampro-light;
+            font-family: 'gothampro-light', sans-serif;
         }
     }
     
@@ -312,16 +312,16 @@ hr {
             margin-top: 10px;
             font-size: 25px;
             text-transform: uppercase;
-            font-family: gothampro-medium;
+            font-family: 'gothampro-medium', sans-serif;
         }
         .akita_one_text{
             font-size: 15px;
-            font-family: gothampro-light;
+            font-family: 'gothampro-light', sans-serif;
             margin-top: 25px;
         }
         span {
             padding-left: 8px;
-            font-family: gothampro-light;
+            font-family: 'gothampro-light', sans-serif;
             font-size: 13px;
         }
     }
@@ -330,7 +330,7 @@ hr {
         color: white;
         padding-right: 10px;
         font-size: 13px;
-        font-family: gothampro-light;
+        font-family: 'gothampro-light', sans-serif;
     }
     .color_2 {
         background-color: #f3f3f3;
@@ -343,11 +343,11 @@ hr {
                 margin-top: 10px;
                 font-size: 25px;
                 text-transform: uppercase;
-                font-family: gothampro-medium;
+                font-family: 'gothampro-medium', sans-serif;
             }
             .akita_one_text_2 {
                 font-size: 15px;
-                font-family: gothampro-light;
+                font-family: 'gothampro-light', sans-serif;
                 margin-top: 25px;
             }
             .time_2 {
@@ -355,11 +355,11 @@ hr {
                 color: #222222;
                 padding-right: 10px;
                 font-size: 13px;
-                font-family: gothampro-light;
+                font-family: 'gothampro-light', sans-serif;
             }
             span {
                 padding-left: 8px;
-                font-family: gothampro-light;
+                font-family: 'gothampro-light', sans-serif;
                 font-size: 13px;
             }
         }
@@ -394,7 +394,7 @@ hr {
         &_title_3 {
             margin-top: 100px;
             font-size: 30px;
-            font-family: gothampro-light;
+            font-family: 'gothampro-light', sans-serif;
             text-align: center;
             font-weight: 700;
     }
@@ -412,6 +412,7 @@ hr {
             }
         .blog_icon {
             margin: 0 auto;
+            max-width: 100%;
         }
         .blog_descr_text {
             font-size: 15px;
@@ -452,6 +453,9 @@ hr {
     background: url(../img/bg_akita_section.jpg) 0 0/100% 100% no-repeat;
     .image_phone {
         margin: 95px 160px 0 0;
+        .phone_akita {
+            max-width: 100%;
+        }
     }
 }
 
@@ -459,13 +463,13 @@ hr {
     color: #fff;
     margin-left: 80px;
     h2 {
-        font-family: gothampro-medium;
+        font-family: 'gothampro-medium', sans-serif;
         font-size: 25px;
         font-weight: 500;
         padding-top: 220px;
         }
     .text_akita {
-        font-family: gothampro-light;
+        font-family: 'gothampro-light', sans-serif;
         font-size: 15px;
         margin-top: 35px;
         line-height: 25px;
@@ -478,7 +482,7 @@ hr {
                 font-size: 15px;
                 padding: 12px 0 0 16px;
                 margin-top: 62px;
-                font-family: gothampro-medium;
+                font-family: 'gothampro-medium', sans-serif;
             }
     }
     .high_blue {
@@ -489,7 +493,7 @@ hr {
             .high_text {
                 font-size: 15px;
                 padding: 12px 0 0 16px;
-                font-family: gothampro-medium;
+                font-family: 'gothampro-medium', sans-serif;
             }
     }
     .different_blue {
@@ -500,7 +504,7 @@ hr {
             .different_text {
                 font-size: 15px;
                 padding: 12px 0 0 16px;
-                font-family: gothampro-medium;
+                font-family: 'gothampro-medium', sans-serif;
             }
     }
 }
@@ -532,7 +536,7 @@ hr {
         &_title_3 {
             margin-top: 100px;
             font-size: 30px;
-            font-family: gothampro-light;
+            font-family: 'gothampro-light', sans-serif;
             text-align: center;
             font-weight: 700;
     }
