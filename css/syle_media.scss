@@ -192,7 +192,11 @@ transform:translateY(10px);
           .promo_wrapper {
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 140px 0 30px 0;
+            margin: 100px 0 30px 0;
+          }
+
+          .top {
+            margin-top: 50px;
           }
 
 
@@ -418,12 +422,36 @@ transform:translateY(10px);
 
 }
 @media (max-width:452px) {
+
+  .bg_section {
+    height: 1800px;
+  }
+
+  body .bg_section .label {
+    padding: 0;
+    margin-top: 210px;
+  }
+
+  .top {
+    margin-top: 50px;
+  }
+
+  .promo_wrapper .promo_item .promo_descr_text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .promo_wrapper .promo_item .promo_round {
+    width: 80px;
+    height: 80px;
+  }
+
 .promo_wrapper .promo_item {
-  width: 80%;
+  // width: 40%;
 }
-body .bg_section .label {
-  padding-top: 500px;
-}
+// body .bg_section .label {
+//   padding-top: 500px;
+// }
 body .bg_section .promo_wrapper {
   margin-top: 50px;
 }
@@ -453,6 +481,10 @@ body .akita .fully_blue {
 }
 
 @media (max-width:375px) {
+body .bg_section .label {
+  padding-top: 50px;
+}
+
   body .akita .different_blue {
     max-width: 290px;
 }
