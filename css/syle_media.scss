@@ -4,6 +4,18 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .promo_wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 165px 0 50px 0;
+  }
+  .promo_wrapper .promo_item {
+    padding-bottom: 40px;
+    width: 34%;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-btn{
     display: flex;
@@ -129,11 +141,6 @@ transform:translateY(10px);
   }
 }
 
-@media (max-width: 1177px) {
-  .promo_wrapper .promo_item {
-    width: 40%;
-  }
-  }
 
     @media (max-width: 1203px){
     .team_wrapper {
@@ -177,7 +184,6 @@ transform:translateY(10px);
           }
 
           .label {
-            margin-top: 250px;
             font-size: 30px;
           }
 
@@ -424,19 +430,6 @@ transform:translateY(10px);
 }
 @media (max-width:452px) {
 
-  .bg_section {
-    height: 1800px;
-  }
-
-  body .bg_section .label {
-    padding: 0;
-    margin-top: 210px;
-  }
-
-  .top {
-    margin-top: 50px;
-  }
-
   .promo_wrapper .promo_item .promo_descr_text {
     margin-top: 10px;
     font-size: 14px;
@@ -447,14 +440,11 @@ transform:translateY(10px);
     height: 80px;
   }
 
-.promo_wrapper .promo_item {
-  // width: 40%;
+.promo_wrapper {
+  margin-top: 75px;
 }
-// body .bg_section .label {
-//   padding-top: 500px;
-// }
-body .bg_section .promo_wrapper {
-  margin-top: 50px;
+.promo_wrapper .promo_item {
+  width: 100%;
 }
 }
 
@@ -482,9 +472,6 @@ body .akita .fully_blue {
 }
 
 @media (max-width:375px) {
-body .bg_section .label {
-  padding-top: 50px;
-}
 
   body .akita .different_blue {
     max-width: 290px;
@@ -498,9 +485,7 @@ body .akita .fully_blue {
 }
 
 @media (max-width:323px) {
-  body .bg_section .label {
-    padding-top: 150px;
-  }
+
   body .akita .different_blue {
     max-width: 270px;
 }
@@ -513,20 +498,3 @@ body .akita .fully_blue {
 
 }
 
-@media (max-width:296px) {
-  body .bg_section .label {
-    padding-top: 250px;
-  }
-}
-
-@media (max-width:275px) {
-  body .bg_section .label {
-    padding-top: 500px;
-  }
-  body .bg_section .site {
-    font-size: 10px;
-  }
-  body .bg_section h1 {
-    font-size: 30px;
-  }
-}
