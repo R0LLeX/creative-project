@@ -289,6 +289,7 @@ left: 22%;
 @media (max-width: 806px) {
   .header_navigation_list {
     justify-content: center;
+    left: 15%;
   }
   .header_navigation_list li {
     padding-right: 20px;
@@ -296,6 +297,7 @@ left: 22%;
   .header_navigation_list .social {
     padding-right: 10;
   }
+
 }
 @media (max-width: 800px) {
   .akita_one_wrapper .color {
@@ -312,9 +314,9 @@ left: 22%;
   }
 
 }
-@media (max-width: 776px) {
+@media (max-width: 786px) {
   .header_navigation_list {
-    left: 15%;
+    left: 13%;
   }
 }
 @media (max-width: 768px) {
@@ -445,10 +447,6 @@ transform: translateX(-20px) translateY(1px);
   body .form .form_flex {
     margin: 50px 25px 0 25px;
   }
-  // .bg_section {
-  //   background: url(../img/bg12section.jpg) no-repeat;
-  //   background-size: auto 100%;
-  // }
 }
 @media (max-width:684px) {
   .label::before {
@@ -457,6 +455,17 @@ transform: translateX(-20px) translateY(1px);
   .team_wrapper .our_team {
     width: 100%;
   }
+}
+@media (max-width:660px) {
+  body .akita .different_blue {
+    max-width: 300px;
+}
+body .akita .high_blue {
+  max-width: 280px;
+}
+body .akita .fully_blue {
+  max-width: 260px;
+}
 }
 @media (max-width:554px){
   .blue_write .blue_write_wrapper_all {
@@ -470,6 +479,25 @@ transform: translateX(-20px) translateY(1px);
   }
   .col-md-2 {
     width: 22.66666667%;
+}
+.promo_wrapper .promo_item .promo_descr_text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.akita_one .time_and_text .akita_one_text {
+  font-size: 14px;
+}
+.akita_one .color_2 .time_and_text_2 .akita_one_text_2 {
+  font-size: 14px;
+}
+.blog_wrapper .blog_descr_text {
+  font-size: 14px;
+}
+.blue_write .blue_write_wrapper_all .blue_write_wrapper_text {
+  font-size: 14px;
+}
+.wrapper_akita .text_akita {
+  font-size: 14px;
 }
 }
 @media (max-width:534px) {
@@ -507,12 +535,13 @@ transform: translateX(-20px) translateY(1px);
   }
 
 }
-@media (max-width:452px) {
-
-  .promo_wrapper .promo_item .promo_descr_text {
-    margin-top: 10px;
-    font-size: 14px;
+@media (max-width:468px) {
+  body .bee_wrapper {
+    flex-direction: column;
+    justify-content: center;
   }
+}
+@media (max-width:452px) {
 
   .promo_wrapper .promo_item .promo_round {
     width: 80px;
@@ -537,7 +566,6 @@ transform: translateX(-20px) translateY(1px);
     width: 28.66666667%;
 }
 }
-
 @media (max-width:405px) {
   body .bg_section .site {
     font-size: 15px;
@@ -550,17 +578,7 @@ transform: translateX(-20px) translateY(1px);
   body .akita .image_phone {
     display: none;
   }
-  body .akita .different_blue {
-    max-width: 300px;
 }
-body .akita .high_blue {
-  max-width: 280px;
-}
-body .akita .fully_blue {
-  max-width: 260px;
-}
-}
-
 @media (max-width:375px) {
 
   body .akita .different_blue {
@@ -573,7 +591,6 @@ body .akita .fully_blue {
   max-width: 260px;
 }
 }
-
 @media (max-width:323px) {
 
   body .akita .different_blue {
