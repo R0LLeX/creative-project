@@ -97,6 +97,13 @@ select {
     src: url(../fonts/myriadpro-regular.ttf);
 }
 
+$maxWidth: 1368;
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 2560;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 2560px) / #{$maxWidth}));
+}
+
 body {
     position: relative;
 }
@@ -302,7 +309,7 @@ hr {
             margin-top: 25px;
             text-align: center;
             color: #fff;
-            font-size: 15px;
+            @include adaptiv-font(15, 20);
             font-family: 'gothampro-light', sans-serif;
         }
     }
@@ -350,7 +357,7 @@ hr {
             font-family: 'gothampro-medium', sans-serif;
         }
         .akita_one_text{
-            font-size: 15px;
+            @include adaptiv-font(15, 19);
             font-family: 'gothampro-light', sans-serif;
             margin-top: 25px;
         }
@@ -382,7 +389,7 @@ hr {
                 font-family: 'gothampro-medium', sans-serif;
             }
             .akita_one_text_2 {
-                font-size: 15px;
+                @include adaptiv-font(15, 19);
                 font-family: 'gothampro-light', sans-serif;
                 margin-top: 25px;
             }
@@ -424,7 +431,6 @@ hr {
         color: #000;
         opacity: 0.2;
         line-height: 70px;
-        // margin-left: 50px;
         font-weight: 300;
         }
         &_title_3 {
@@ -451,7 +457,7 @@ hr {
             max-width: 100%;
         }
         .blog_descr_text {
-            font-size: 15px;
+            @include adaptiv-font(15, 19);
             font-family: 'gothampro-light' , sans-serif;
             text-align: center;
         }
@@ -467,7 +473,7 @@ hr {
         margin: 80px 0 120px 0;
         .blue_write_wrapper_text {
             color: #fff;
-            font-size: 15px;
+            @include adaptiv-font(15, 20);
             font-family: 'gothampro-light' , sans-serif;
             margin-left: 25px;
         }
@@ -506,9 +512,9 @@ hr {
         }
     .text_akita {
         font-family: 'gothampro-light', sans-serif;
-        font-size: 15px;
+        @include adaptiv-font(15, 20);
         margin-top: 35px;
-        line-height: 25px;
+        line-height: calc(25 / 15 * 100%);
         }
     .fully_blue {
         height: 40px;

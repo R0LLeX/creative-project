@@ -1,3 +1,8 @@
+@media (min-width: 2146px) {
+  .none_br {
+    display: none;
+  }
+}
 @media (min-width: 1368px)   {
   .form .form_flex .texterea_size {
     width: 1249px;
@@ -519,6 +524,9 @@ transform: translateX(-20px) translateY(1px);
 }
 .promo_wrapper .promo_item {
   width: 100%;
+}
+.creatives h1 {
+  font-size: 40px;
 }
 }
 @media (max-width:426px) {
